@@ -1,0 +1,375 @@
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+
+    position: sticky;
+    top: 0;
+    background-color: #0B1F3A;
+    z-index: 1000;
+}
+.logo{
+    color:#D4A017;
+    font-size:48px;
+    font-weight:bold;
+    letter-spacing:4px;
+}
+.menu{
+    display:flex;
+    gap:70px;
+    padding-right: 30px;
+    font-size:20px;
+}
+.menu a{
+    color:white;
+    text-decoration:none;
+}
+.menu a:hover{
+    color:gold;
+}
+/* ===========================
+   ABOUT-AVIANT
+=========================== */
+#about-aviant{
+    text-align:center;
+    padding:90px 60px;
+    background:#E9EEF3;
+
+}
+#about-aviant h2{
+    font-size:52px;
+    color:#0B1F3A;
+    margin-bottom:15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#about-aviant p{
+    color:#555;
+    line-height:1.7;
+    font-size:19px;
+    max-width: 1200px;
+    margin:0 auto;
+    
+}
+.gold-line{
+    width:140px;
+    height:4px;
+    background:#D4A017;
+    border-radius:20px;
+    margin: auto;
+    transition:width .4s ease;
+}
+.gold-line.center{
+    margin:18px auto 30px;
+}
+#about-aviant:hover .gold-line{
+    width:250px;
+}
+
+/* ===========================
+   MISSON-VISION-VALUES
+=========================== */
+#mission-vision-values{
+    display:flex;
+    justify-content:space-between;
+    align-items:stretch;
+    padding:70px 10%;
+    background:#E9EEF3;
+}
+.mvv-item{
+    flex:1;
+    text-align:center;
+    padding:20px 50px;
+}
+.mvv-icon{
+    width:80px;
+    height:80px;
+    margin:0 auto 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:#FFFFFF;
+    border:3px solid #D4A017;
+    color:#D4A017;
+    font-size:30px;
+}
+.mvv-item h2{
+    color:#0B1F3A;
+    font-size:26px;
+    margin:0 0 15px;
+    text-transform:uppercase;
+}
+.mvv-item:not(:last-child){
+    border-right:1px solid rgba(11,31,58,.20);
+}
+
+/* ===========================
+   DESCRIPTION
+=========================== */
+#description{
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+    padding:80px 60px;
+    background:#F5F5F5;
+}
+
+
+/* =========================
+   ABOUT SHOWCASE
+========================= */
+
+.about-showcase{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    max-width:1200px;
+    width:100%;
+    margin:0 auto;
+    background:#FFFFFF;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+.about-showcase:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.about-image{
+    overflow:hidden;
+}
+
+
+.about-image img{
+    width:100%;
+    height:100%;
+    min-height:380px;
+    object-fit:cover;
+    display:block;
+    transition:transform .5s ease;
+}
+
+
+.about-showcase:hover .about-image img{
+    transform:scale(1.04);
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.about-content{
+    padding:55px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:left;
+}
+
+
+.about-content h2{
+    color:#0B1F3A;
+    font-size:38px;
+    margin:0;
+}
+
+
+/* =========================
+   GOLD DIVIDER
+========================= */
+
+.about-divider{
+    width:60px;
+    height:3px;
+    background:#D4A017;
+    border-radius:999px;
+    margin:12px 0 20px;
+}
+
+
+/* =========================
+   PARAGRAPH
+========================= */
+
+.about-content p{
+    color:#666;
+    font-size:17px;
+    line-height:1.8;
+    margin:0 0 18px;
+}
+
+
+.about-content p:last-child{
+    margin-bottom:0;
+}
+
+
+/* =========================
+   REVERSE
+========================= */
+
+.about-showcase.reverse .about-image{
+    order:2;
+}
+.about-showcase.reverse .about-content{
+    order:1;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width:900px){
+    .about-showcase{
+        grid-template-columns:1fr;
+    }
+    .about-showcase.reverse .about-image{
+        order:1;
+    }
+    .about-showcase.reverse .about-content{
+        order:2;
+    }
+    .about-content{
+        padding:40px;
+    }
+}
+
+
+@media (max-width:600px){
+    #description{
+        padding:60px 20px;
+    }
+    .about-content{
+        padding:30px;
+    }
+    .about-content h2{
+        font-size:30px;
+    }
+    .about-content p{
+        font-size:16px;
+
+    }
+    .about-image img{
+
+        min-height:280px;
+    }
+}
+/* ===========================
+   FOOTER
+=========================== */
+#aviantfooter{
+    padding:20px 120px;
+    background: linear-gradient(
+        to bottom,
+        rgba(11,31,58,.92),
+        rgba(11,31,58,.98)
+    );
+    border-top: 3px solid #D4A017;
+}
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:80px;
+}
+.tagline{
+    padding-right: 20px;
+}
+.tagline h2{
+     color:#D4A017;
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:12px;
+}
+
+.tagline p{
+    color:rgba(255,255,255,.88);
+    font-size:17px;
+    line-height:1.8;
+    font-weight:400;
+    max-width:320px;
+}
+.footermenu h2,
+.footerservices h2,
+.footerprojects h2,
+.social h2,
+.socialmedia h2{
+    color:#D4A017;
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.footermenu ul,
+.footerservices ul,
+.footerprojects ul,
+.social ul,
+.socialmedia ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footermenu li,
+.footerservices li,
+.footerprojects li,
+.social li,
+.socialmedia li{
+    margin-bottom: 12px;
+}
+
+.footermenu a,
+.footerservices a,
+.footerprojects a,
+.social a,
+.socialmedia a{
+     color:rgba(255,255,255,.9);
+    font-size:17px;
+    font-weight:400;
+    text-decoration:none;
+    transition:all .3s ease;
+}
+.footermenu a:hover,
+.footerservices a:hover,
+.footerprojects a:hover,
+.social a:hover,
+.socialmedia a:hover{
+    color: #D4A017;
+    transform: translateX(5px);
+    display: inline-block;
+}
+.footer-divider{
+    width:140px;
+    height:2px;
+    background:#D4A017;
+    margin:24px 0;
+    border-radius: 999px;
+    transition:all .3s ease;
+}
+.tagline:hover .footer-divider{
+    width:250px;
+}
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.12);
+    margin-top:40px;
+    padding-top:20px;
+    text-align:center;
+    font-size:14px;
+    color:rgba(255,255,255,.6);
+}

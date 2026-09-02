@@ -1,0 +1,122 @@
+#projects{
+    background:#FFFFFF;
+    padding:80px 60px;
+    text-align:center;
+}
+
+#projects h2{
+    font-size:52px;
+    color:#0B1F3A;
+    margin:0 0 15px;
+}
+
+#projects > p{
+    max-width:900px;
+    margin:0 auto 50px;
+    font-size:18px;
+    line-height:1.7;
+    color:#555;
+}
+
+.projects-container{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    max-width:1400px;
+    margin:0 auto;
+}
+
+.project-card{
+    flex:1;
+    background:#FFFFFF;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+    transition:transform .5s ease, box-shadow .5s ease;
+}
+.project-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 22px 45px rgba(0,0,0,.18);
+}
+.project-card:hover h3{
+    color:#D4A017;
+}
+
+.project-card img{
+    width:100%;
+    aspect-ratio:16 / 9;
+    object-fit:cover;
+    display:block;
+    transition:transform .4s ease;
+}
+.project-card:hover img{
+    transform:scale(1.04);
+}
+.project-info{
+    padding:20px;
+    text-align:left;
+}
+
+.project-info h3{
+    font-size:24px;
+    font-weight:700;
+    color:#0B1F3A;
+    margin:0 0 8px;
+    letter-spacing:.3px;
+}
+.project-info h3::after{
+    content:"";
+    display:block;
+    width:50px;
+    height:3px;
+    background:#D4A017;
+    border-radius:999px;
+    margin-top:8px;
+}
+.project-location{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#D4A017;
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:12px;
+}
+.project-location i{
+    color:#D4A017;
+}
+
+.project-info p{
+    color:#666;
+    font-size:15px;
+    line-height:1.7;
+    margin-top:10px;
+    margin-bottom: 0px;
+}
+.gold-line{
+    width:140px;
+    height:4px;
+    background:#D4A017;
+    border-radius:20px;
+    margin: auto;
+    transition:width .4s ease;
+}
+.gold-line.center{
+    margin:18px auto 30px;
+}
+#projects:hover .gold-line{
+    width:300px;
+}
+.learn-more{
+    display:inline-block;
+    margin-top:15px;
+    color:#D4A017;
+    font-weight:600;
+    text-decoration:none;
+    transition:all .3s ease;
+}
+
+.learn-more:hover{
+    transform:translateX(5px);
+    color:#B8860B;
+}
