@@ -9,7 +9,7 @@
     background:
     linear-gradient(rgba(255,255,255,.25),
     rgba(255,255,255,.25)),
-    url("PICTURES/aviant.png");
+    url("../PICTURES/aviant.png");
     background-size:cover;
     background-position:bottom;
     background-repeat:no-repeat;
