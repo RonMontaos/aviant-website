@@ -51,3 +51,31 @@ background:
     gap:10px;
 
 }
+
+@media (max-width:600px){
+
+    #cta{
+        width:100%;
+        padding:60px 20px;
+    }
+
+    #cta p{
+        width:100%;
+        max-width:600px;
+        margin:0 auto;
+        line-height:1.7;
+    }
+
+    .cta-button{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+        align-items:center;
+    }
+
+    .cta-button button{
+        width:100%;
+        max-width:250px;
+    }
+
+}
