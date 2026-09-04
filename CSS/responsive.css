@@ -50,7 +50,7 @@
 
     .menu{
         gap:5px;
-        width:100%;
+        flex-wrap:wrap;
         font-size:14px;
         justify-content:center;
     }
