@@ -257,3 +257,15 @@
     }
 
 }
+
+
+@media (max-width:600px){
+
+    .services-diagram::before,
+    .services-diagram::after{
+
+        display:none;
+
+    }
+
+}
