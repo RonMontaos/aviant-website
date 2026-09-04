@@ -121,27 +121,4 @@
     color:#B8860B;
 }
 
-@media (max-width:600px){
 
-    #projects{
-        width:100%;
-        padding:60px 20px;
-    }
-
-    .projects-container{
-        width:100%;
-        display:grid;
-        grid-template-columns:1fr;
-        gap:25px;
-    }
-
-    .project-card{
-        width:100%;
-    }
-
-    .project-card img{
-        width:100%;
-        height:auto;
-    }
-
-}
