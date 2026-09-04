@@ -50,8 +50,9 @@
 
     .menu{
         gap:5px;
+        width:100%;
         font-size:14px;
-       justify-content:center;
+        justify-content:center;
     }
 
     .hero-content h1{
