@@ -86,3 +86,28 @@ button:hover{
     background-color:#B8860B;
 }
 
+@media (max-width:600px){
+
+    .navbar{
+        width:100%;
+        padding:15px 20px;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .logo{
+        font-size:36px;
+    }
+
+    .menu{
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+        padding:0;
+        font-size:14px;
+    }
+
+}
+
