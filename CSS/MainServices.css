@@ -213,3 +213,47 @@
 .services-title:hover .gold-line{
     width:250px;
 }
+
+@media (max-width:600px){
+
+    #services{
+        width:100%;
+        padding:60px 20px;
+    }
+
+    .services-diagram{
+        width:100%;
+        height:auto;
+
+        display:flex;
+        flex-direction:column;
+
+        gap:20px;
+    }
+
+    .services-center{
+        position:static;
+        transform:none;
+
+        order:-1;
+
+        margin:20px auto 30px;
+    }
+
+    .service-item{
+        position:static;
+
+        top:auto;
+        right:auto;
+        bottom:auto;
+        left:auto;
+
+        transform:none;
+
+        width:100%;
+        max-width:500px;
+
+        margin:0 auto;
+    }
+
+}
