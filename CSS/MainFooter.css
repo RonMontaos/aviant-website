@@ -99,3 +99,32 @@
     font-size:14px;
     color:rgba(255,255,255,.6);
 }
+
+@media (max-width:600px){
+
+    #aviantfooter{
+        width:100%;
+        padding:40px 25px;
+    }
+
+    .footer-content{
+        display:flex;
+        flex-direction:column;
+        gap:35px;
+        align-items:flex-start;
+    }
+
+    .tagline,
+    .footermenu,
+    .footerservices,
+    .footerprojects,
+    .social,
+    .socialmedia{
+        width:100%;
+    }
+
+    .footer-bottom{
+        width:100%;
+    }
+
+}
