@@ -130,3 +130,78 @@ body{
 #aviantfooter{
     width:100%;
 }
+
+@media (max-width: 600px){
+
+    #about{
+
+        width:100%;
+
+        padding:50px 20px;
+
+        display:flex;
+
+        flex-direction:column;
+
+    }
+
+
+    .about-media{
+
+        width:100%;
+
+        height:auto;
+
+        min-height:0;
+
+    }
+
+
+    .about-media video{
+
+        display:block;
+
+        width:100%;
+
+        height:auto;
+
+        min-height:0;
+
+        object-fit:cover;
+
+    }
+
+
+    .about-text{
+
+        width:100%;
+
+        text-align:center;
+
+        padding-top:30px;
+
+    }
+
+
+    .about-text h2{
+
+        font-size:34px;
+
+    }
+
+
+    .about-text p{
+
+        width:100%;
+
+        max-width:600px;
+
+        margin:0 auto;
+
+        font-size:16px;
+
+        line-height:1.7;
+
+    }
+
+}
