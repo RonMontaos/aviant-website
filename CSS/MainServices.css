@@ -231,7 +231,15 @@
         flex-direction:column;
         align-items:center;
 
-        gap:35px;
+        gap:45px;
+    }
+    .service-item:nth-child(6){
+        margin-top:20px;
+    }
+    .services-diagram::before,
+    .services-diagram::after{
+
+        display:none;
     }
 
     /* AVIANT SERVICES CIRCLE */
@@ -295,11 +303,6 @@
     .service-icon{
         order:2;
         flex-shrink:0;
-    }
-    .services-diagram::before,
-    .services-diagram::after{
-
-        display:none;
     }
 
 }
