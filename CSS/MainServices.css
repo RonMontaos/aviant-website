@@ -233,16 +233,12 @@
 
         gap:45px;
     }
-    .service-item:nth-child(6){
-        margin-top:20px;
-    }
+
     .services-diagram::before,
     .services-diagram::after{
-
         display:none;
     }
 
-    /* AVIANT SERVICES CIRCLE */
     .services-center{
         position:static;
 
@@ -259,7 +255,6 @@
         align-items:center;
     }
 
-    /* RESET DESKTOP POSITIONING */
     .service-item{
         position:static;
 
@@ -282,7 +277,6 @@
         gap:20px;
     }
 
-    /* TEXT */
     .service-text{
         flex:1;
         order:1;
@@ -299,10 +293,14 @@
         margin:0;
     }
 
-    /* ICON */
     .service-icon{
         order:2;
         flex-shrink:0;
+    }
+
+    /* EXTRA SPACE FOR RENOVATION */
+    .service-item:nth-child(6){
+        margin-top:20px;
     }
 
 }
