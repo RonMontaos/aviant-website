@@ -219,27 +219,39 @@
     #services{
         width:100%;
         padding:60px 20px;
+        overflow:hidden;
     }
 
     .services-diagram{
         width:100%;
         height:auto;
+        min-height:0;
 
         display:flex;
         flex-direction:column;
+        align-items:center;
 
-        gap:20px;
+        gap:25px;
     }
 
+    /* AVIANT SERVICES CIRCLE */
     .services-center{
         position:static;
+
+        width:160px;
+        height:160px;
+
+        margin:0 auto 20px;
+
         transform:none;
 
-        order:-1;
-
-        margin:20px auto 30px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
     }
 
+    /* RESET DESKTOP POSITIONING */
     .service-item{
         position:static;
 
@@ -254,18 +266,40 @@
         max-width:500px;
 
         margin:0 auto;
+
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+
+        gap:20px;
     }
 
-}
+    /* TEXT */
+    .service-text{
+        flex:1;
+        order:1;
+    }
 
+    .service-text h2{
+        font-size:20px;
+        margin:0 0 8px;
+    }
 
-@media (max-width:600px){
+    .service-text p{
+        font-size:14px;
+        line-height:1.6;
+        margin:0;
+    }
 
+    /* ICON */
+    .service-icon{
+        order:2;
+        flex-shrink:0;
+    }
     .services-diagram::before,
     .services-diagram::after{
 
         display:none;
-
     }
 
 }
